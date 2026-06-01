@@ -10,6 +10,7 @@ namespace GestiuneRestaurantApp.Data
         public DbSet<Produs> Produse { get; set; }
         public DbSet<Comanda> Comenzi { get; set; }
         public DbSet<DetaliiComanda> DetaliiComenzi { get; set; }
+        public DbSet<User> Users { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
