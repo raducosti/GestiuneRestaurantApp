@@ -20,7 +20,7 @@ namespace GestiuneRestaurantApp.Views
 
         private void OpenMainWindow(User user)
         {
-            MainWindow mainWindow = new MainWindow();
+            MainWindow mainWindow = new MainWindow(user);
             mainWindow.Title = $"Gestiune Restaurant - {user.Nume} ({user.Rol})";
             mainWindow.Show();
 
